@@ -1,0 +1,41 @@
+@import colors
+
+.ellipsis
+  text-overflow: ellipsis
+  white-space: nowrap
+  overflow: hidden
+
+#menu
+  position: fixed
+  overflow: auto
+  top: 70px
+  bottom: 0
+  padding: 10px
+  @media (max-width: 780px)
+    display: none
+  @media (min-width: 781px)
+    width: 200px
+
+
+.menu-node
+  clear: both
+
+  div
+    float: left
+
+  .empty
+    margin-left: 17px
+
+  .menu-h1
+    margin-left: 0
+
+  .menu-h2
+    margin-left: 10px
+
+  .menu-h3
+    margin-left: 20px
+    width: 60%
+
+    a
+      color: #131313
+      @extend .ellipsis

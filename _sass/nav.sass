@@ -1,0 +1,69 @@
+@import colors
+
+input[type=checkbox]
+  position: absolute
+  top: -9999px
+  left: -9999px
+
+label
+  display: none
+  cursor: pointer
+  user-select: none
+
+.nav
+  a,
+  label
+    color: white
+    text-decoration: none
+    font: 20px
+  ul
+    max-width: 800px
+    margin: 0px auto
+    list-style: none
+    > li
+      float: left
+      padding: 0 5px
+      text-align: center
+      cursor: pointer
+      a
+        &:hover
+          color: whitesmoke
+
+        i
+          color: $white
+          font-size: 22px
+          &:hover
+            color: whitesmoke
+
+@media screen and (max-width: 44em)
+  .nav
+    height: 10000px
+    ul
+      display: none
+      height: 100%
+      background: $green
+    label
+      position: relative
+      display: block
+      width: 100%
+      min-height: 2.25em
+      font-size: 1.1em
+    label:after
+      position: absolute
+      right: .25em
+      top: 0
+      content: "\2261"
+      font-size: 2.8em
+    input[type=checkbox]:checked ~ label:after
+      color: #2A2A2A
+    input[type=checkbox]:checked ~ ul
+      display: block
+      > li
+        float: initial
+        padding: 1rem
+        text-align: left
+        &:after
+          position: absolute
+          right: .25em
+        &:hover
+          background: #25AB50

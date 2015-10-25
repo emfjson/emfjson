@@ -1,0 +1,16 @@
+# Site settings
+title: emfjson
+email: g.hillairet@gmail.com
+description: "JSON Binding for EMF (Eclipse Modeling Framework)."
+baseurl: ""
+url: "https://ghillairet.github.io/emfjson"
+github_username:  ghillairet
+
+# Build settings
+markdown: redcarpet
+redcarpet:
+    extensions: ["with_toc_data"]
+permalink: pretty
+highlighter: none
+sass:
+    sass_dir: _sass

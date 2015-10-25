@@ -1,0 +1,84 @@
+@import vendor/fontello.css
+@import vendor/normalize.css
+@import colors
+
+*
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+
+body
+  font-family: proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif
+  padding: 0
+  margin: 0
+  font-size: 18px
+  background: #F9F9F9
+  overflow: auto
+
+  &:nth-last-child(1)
+    margin-bottom: 50px
+
+a
+  text-decoration: none
+  color: #27AE60
+
+h1, h2, h3
+  color: #333
+  margin: 20px 0px 5px
+
+h1
+  font-size: 25px
+
+h2
+  font-size: 20px
+
+section
+  overflow: auto
+  position: relative
+  padding: 10px 15px
+  max-width: 960px
+  margin: 0px auto
+
+pre
+  line-height: 1.5
+  border-radius: 0.3em
+  code
+    font-family: Consolas, Monaco, "Andale Mono", monospace
+    font-weight: 200
+    overflow: auto
+    font-size: 14px
+
+.shadow-text
+  text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 3px
+
+.separator
+  height: 80px
+
+.button
+  font-size: 24px
+  background: #B8E986 none repeat scroll 0% 0%
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.3)
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1)
+  color: black
+  border-radius: 4px
+  border: medium none
+  padding: 8px 16px
+  font-weight: 400
+  margin: 0px 12px
+  display: inline-block
+  text-decoration: none
+
+footer
+  background: $green none repeat scroll 0% 0%
+  color: #FFF
+  text-align: center
+  box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.2)
+  height: 30px
+  line-height: 30px
+  font-size: 12px
+  width: 100%
+  position: fixed
+  bottom: 0
+  z-index: 99
+
+  a
+    color: $black

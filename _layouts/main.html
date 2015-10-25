@@ -1,0 +1,52 @@
+---
+layout: default
+title: EMFJSON - Eclipse Modeling Framework meets JSON
+---
+
+<div class="site-hero">
+    <section>
+        <div class="header">
+            <div class="row">
+                <div class="eight columns offset-by-two shadow-text">
+                    <h1>{{ page.intro.title }}</h1>
+                    <p class="hero-heading">
+                        {{ page.intro.description }}
+                    </p>
+                    <a href="/download" class="button">Download</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="ten columns offset-by-one">
+                    {% highlight json %}
+                    {{ page.sample }}
+                    {% endhighlight %}
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="section values">
+    <div class="container">
+        <div class="row">
+            {% for feature in page.features-one %}
+                <div class="one-third column value">
+                    <h2 class="value-heading">{{ feature.title }}</h2>
+                    <p class="value=description">{{ feature.description }}</p>
+                    <a>More...</a>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            {% for feature in page.features-second %}
+                <div class="one-third column value">
+                    <h2 class="value-heading">{{ feature.title }}</h2>
+                    <p class="value=description">{{ feature.description }}</p>
+                    <a>More...</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
