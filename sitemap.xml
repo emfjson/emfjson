@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>http://emfjson.org/</loc>
+  <lastmod>2015-10-26T11:56:44+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://emfjson.org/docs/</loc>
+  <lastmod>2015-10-26T11:56:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://emfjson.org/download/</loc>
+  <lastmod>2015-10-26T11:56:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://emfjson.org/docs/tutorial/</loc>
+  <lastmod>2015-10-26T11:56:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://emfjson.org/docs/format/</loc>
+  <lastmod>2015-10-26T11:56:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://emfjson.org/docs/emf/</loc>
+  <lastmod>2015-10-26T11:56:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://emfjson.org/docs/jackson/</loc>
+  <lastmod>2015-10-26T11:56:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://emfjson.org/docs/custom/</loc>
+  <lastmod>2015-10-26T11:56:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://emfjson.org/docs/gwt/</loc>
+  <lastmod>2015-10-26T11:56:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://emfjson.org/docs/couchdb/</loc>
+  <lastmod>2015-10-26T11:56:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://emfjson.org/docs/mongo/</loc>
+  <lastmod>2015-10-26T11:56:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+</urlset>
