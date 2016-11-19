@@ -1,16 +1,35 @@
-.features
+@import colors
+
+.hero
+  height: 300px
+  background: #2d2d2d
+  padding-top: 80px
+  color: #e9e9e9
+  font-weight: 300
+
+  .text
+    font-size: 86px
+    text-align: center
+    color: #27AE60
+    padding: 42px
+    strong
+      font-weight: 100
+
+  .small-text
+    font-size: 18px
+    text-align: center
+
+.home-nav
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: center
   div
-    margin: 10px 0
-
-    div
-      float: left
-      width: 30%
-      margin-left: 40px
-      p
-        font-size: 16px
-
-      &:nth-child(1)
-        margin-left: 0
-
-  &:after
-    clear: both
+    margin: 32px
+    a
+      color: white
+      padding: 14px
+      font-size: 22px
+      &:hover
+        color: $green
+        border-bottom: 1px solid $green

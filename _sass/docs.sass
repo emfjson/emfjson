@@ -1,42 +1,46 @@
+@import colors
+
+.docs
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  justify-content: flex-start
+
+  p
+    margin: 0
+
+  > div
+    padding: 24px 24px 24px 0
+    h2
+      margin: 0 0
+    a
+      &:hover
+        color: $green
+
+.doc-header
+  
 .nav-docs
-  width: 25%
-  float: left
-  color: #2D2D2D
-  font-size: 14px
-  line-height: 16px
-
-  a
-    color: inherit
-    &:hover
-      color: $green
-
-  .nav-docs-section
-    padding: 4px 0px
-
-  &:first-child
-    padding-top: 0px
-    border-top: 0px none
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font-weight: 300
+  color: #202020
+  font-size: 18px
+  line-height: 20.8px
+  margin: 1em 0 4em
+  width: 195px
+  padding-left: 20px
 
   h3
-    text-transform: uppercase
-    font-size: 16px
-    padding-bottom: 15px
+    color: #202020
+    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif
+    font-size: 22px
+    font-weight: 300
+    line-height: 20.8px
+    margin: 3em 0 1.5em
 
   ul
     list-style: outside none none
-    padding: 0
     margin: 0
 
     li
-      margin: 0px 0px 6px
-      padding: 2px 0
-
-      ul
-        padding: 2px 0
-        margin: 6px 0 0 20px
-        border-bottom: none
-
-
-.content-docs
-  width: 75%
-  float: left
+      line-height: 32px
+      margin: 0

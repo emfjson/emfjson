@@ -1,0 +1,58 @@
+@import colors
+
+header
+  font-family: 'Rubik', 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font-weight: 300
+  color: #202020
+  font-size: 18px
+  line-height: 21px
+  height: 50px
+  background: black
+  box-shadow: inset 0 -1px 0 0px rgba(0, 0, 0, 0.1)
+  z-index: 10
+
+  .nav-home
+    color: #00d8ff
+    font-size: 24px
+    line-height: 50px
+    height: 50px
+    display: inline-block
+
+  .nav-logo
+    vertical-align: middle
+    display: inline-block
+
+  a
+    color: #e9e9e9
+    text-decoration: none
+
+  ul
+    display: inline-block
+    vertical-align: top
+
+  li
+    display: inline
+
+  .nav-site
+    margin: 0 0 0 20px
+    &:nth-child(3)
+      float: right
+      margin: 0
+
+    li
+      margin: 0
+      > a
+        box-sizing: content-box
+        padding: 0 10px
+        line-height: 50px
+        display: inline-block
+        height: 50px
+        color: #ddd
+        &:hover
+          color: $green
+          border-bottom: 2px solid $green
+
+  &:after
+    content: ""
+    display: table
+    clear: both

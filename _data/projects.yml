@@ -1,0 +1,20 @@
+- id: emfjson-jackson
+  description: JSON binding for the Eclipse Modeling Framework
+  docs: /projects/jackson/latest
+  source: https://github.com/emfjson/emfjson-jackson
+- id: emfjson-gwt
+  description: JSON binding for the Eclipse Modeling Framework on GWT
+  docs: /projects/gwt/latest
+  source: https://github.com/emfjson/emfjson-gwt
+- id: ecore.js
+  description: Javascript implementation of the Eclipse Modeling Framework.
+  docs: /projects/ecorejs/latest
+  source: https://github.com/emfjson/ecore.js
+- id: emfjson-mongo
+  description: Store EMF models in MongoDB
+  docs: /projects/mongo/latest
+  source: https://github.com/emfjson/emfjson-mongo
+- id: emfjson-couchdb
+  description: Store EMF models in CouchDB
+  docs: /projects/couchdb/latest
+  source: https://github.com/emfjson/emfjson-couchdb

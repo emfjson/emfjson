@@ -1,52 +1,51 @@
----
-layout: page
-title: emfjson - documentation
----
+<!DOCTYPE html>
+<html>
 
-<div class="nav-docs">
+{% include head.html %}
 
-    <div class="nav-docs-section">
-        <h3>Start</h3>
-        <ul>
-            <li><a href="/docs/">Getting Started</a></li>
-            <li><a href="/docs/tutorial">Tutorial</a></li>
-        </ul>
-    </div>
+<body>
 
-    <div class="nav-docs-section">
-        <h3>Guides</h3>
-        <ul>
-            <li><a href="/docs/format">JSON Format</a></li>
-            <li><a href="/docs/emf">EMF API</a></li>
-            <li>
-                <a href="/docs/jackson">Jackson</a>
-                <ul>
-                    <li><a href="/docs/custom">Customization Features</a></li>
-                </ul>
-            </li>
-            <li><a href="/docs/gwt">GWT</a></li>
-        </ul>
-    </div>
+    {% include navigation.html %}
 
-    <div class="nav-docs-section">
-        <h3>Databases</h3>
-        <ul>
-            <li><a href="/docs/couchdb">CouchDB</a></li>
-            <li><a href="/docs/mongo">MongoDB</a></li>
-        </ul>
-    </div>
+    <section>
+      <div class="content">
+        <div class="inner-content">
+          <h1>{{page.title}}</h1>
+          <div class="doc-header">
+            {% if page.links %}
+            <div class="links">
+              {% for link in page.links %}
+              <a target="_blank" href="{{ link.url }}">{{ link.label }}</a>
+              {% endfor %}
+            </div>
+            {% endif %}
+            <!-- {% if page.help %}
+            <div class="help">
+              <a href="https://emfjson.slack.com">Slack</a>
+              <a href="https://emfjson.slack.com">Google Groups</a>
+            </div>
+            {% endif %} -->
+          </div>
+          <div>
+            {{ content }}
+          </div>
+        </div>
+        {% if page.navigation %}
+        <div class="nav-docs">
+          <div>
+            <h3>Contents</h3>
+            <ul>
+            {% for item in page.navigation %}
+                <li>
+                  <a href="#{{ item | downcase | replace:' ', '-' }}">{{ item }}</a>
+                </li>
+            {% endfor %}
+            </ul>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </section>
 
-    <!--<div class="nav-docs-section">-->
-        <!--<h3>Examples</h3>-->
-        <!--<ul>-->
-            <!--<li>Simple</li>-->
-            <!--<li>Eclipse Plugin</li>-->
-            <!--<li>CDO</li>-->
-        <!--</ul>-->
-    <!--</div>-->
-
-</div>
-
-<div class="content-docs">
-    {{ content }}
-</div>
+</body>
+</html>
